@@ -30,23 +30,22 @@ const About = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.2,
-        delay: 0.06 * i,
+        duration: 1,
+        delay: 0.05 * i,
       },
     }),
   };
 
   const slideInVariant = {
-    initial: { opacity: 0, y: 50 },
+    initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, delay: 0.15, ease: "easeInOut" },
+      transition: { duration: 1, delay: 0.15, ease: "easeInOut" },
     },
   };
-  
+
   return (
-    <div className="container mx-auto py-20 px-6">
+    <section className="container mx-auto py-20 px-6">
       <motion.h5
         variants={slideInVariant}
         initial="initial"
@@ -141,7 +140,7 @@ const About = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

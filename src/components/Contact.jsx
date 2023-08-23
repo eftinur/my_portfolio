@@ -4,22 +4,21 @@ import Marquee from "react-fast-marquee";
 
 const Contact = () => {
   const slideInVariant = {
-    initial: { opacity: 0, y: 50 },
+    initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      y: 0,
       transition: { duration: 0.5, delay: 0.15, ease: "easeInOut" },
     },
   };
 
   return (
-    <div className="h-screen flex items-center justify-center text-center">
+    <section className="h-screen flex items-center justify-center text-center">
       <div className="overflow-hidden">
         <Marquee
           pauseOnHover={true}
           speed={120}
           direction="right"
-          className="marquee_wrapper py-6 text-center mb-20"
+          className="bg-[#e6fc5f] py-6 text-center mb-20"
         >
           <h5 className="text-7xl lg:text-9xl mx-8">Let's Talk!</h5>
           <h5 className="text-7xl lg:text-9xl mx-8">Let's Talk!</h5>
@@ -73,7 +72,7 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

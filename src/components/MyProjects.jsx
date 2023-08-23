@@ -49,24 +49,24 @@ const MyProjects = () => {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1.2,
+        duration: 1,
         ease: "easeInOut",
-        delay: 0.06 * i,
+        delay: 0.05 * i,
       },
     }),
   };
 
   const slideInVariant = {
-    initial: { opacity: 0, y: 50 },
+    initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, delay: 0.15, ease: "easeInOut" },
+
+      transition: { duration: 1, delay: 0.15, ease: "easeInOut" },
     },
   };
 
   return (
-    <div className="bg-[#242328] text-[#d1d9d9] py-20">
+    <section className="bg-[#242328] text-[#d1d9d9] py-20">
       <div className="container mx-auto px-6">
         <motion.h5
           variants={slideInVariant}
@@ -134,7 +134,7 @@ const MyProjects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
