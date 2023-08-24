@@ -9,7 +9,7 @@ const Header = () => {
       transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
       className="container mx-auto flex justify-between items-center py-4 px-4"
     >
-      <div className="flex gap-4 text-sm">
+      <div className="flex gap-4 text-xs md:text-sm">
         <a href="https://github.com/eftinur" target="_blank">
           GitHub
         </a>

@@ -10,7 +10,7 @@ const MyProjects = () => {
       _id: 1,
       image: rollin_rust,
       title: "Rollin Rust",
-      desc: " Rollin Rust is a MERN Stack application built for a small garage to showcase their services.",
+      desc: "Rollin Rust is a MERN Stack application built for a small garage to showcase their services.",
       tech_stack:
         "React.js | React-Router | Axios | Firebase | React-Hot-Toast | Node.js | Express.js | MongoDB",
       demo_url: "https://rollin-rust.web.app/",
@@ -21,7 +21,7 @@ const MyProjects = () => {
       _id: 2,
       image: snapvault,
       title: "SnapVault",
-      desc: " Rollin Rust is a MERN Stack application built for a small garage to showcase their services.",
+      desc: "SnapVault is a MERN Stack application built for users to store their image files into a cloud storage.",
       tech_stack:
         "React.js | React-Router | TanStack Query | Axios | Firebase | React-Hot-Toast | Node.js | Express.js | MongoDB",
       demo_url: "https://photoflow-51a7e.web.app/",
@@ -32,7 +32,7 @@ const MyProjects = () => {
       _id: 3,
       image: pookatales,
       title: "Pookatales",
-      desc: " Rollin Rust is a MERN Stack application built for a small garage to showcase their services.",
+      desc: "Pookatales is an online e-commerce books selling web application built for selling books online.",
       tech_stack:
         "React.js | React-Router | Axios | REST API | React-Hot-Toast | React-Fast-Marquee | GSAP",
       demo_url: "https://pookatales.netlify.app/",
@@ -42,11 +42,11 @@ const MyProjects = () => {
 
   const fadeInVariant = {
     initial: {
-      x: -50,
+      // x: -120,
       opacity: 0,
     },
     animate: (i) => ({
-      x: 0,
+      // x: 0,
       opacity: 1,
       transition: {
         duration: 1,
@@ -60,7 +60,6 @@ const MyProjects = () => {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
-
       transition: { duration: 1, delay: 0.15, ease: "easeInOut" },
     },
   };
@@ -78,7 +77,7 @@ const MyProjects = () => {
           My Projects
         </motion.h5>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
           {data.map((el, i) => (
             <motion.div
               key={el._id}
@@ -100,8 +99,8 @@ const MyProjects = () => {
                   {el.title}
                 </h3>
                 <p class="text-lg lg:text-2xl mb-4">{el.desc}</p>
-                <p class="text-lg lg:text-xl my-2">Technologies used:</p>
-                <p class="text-xs lg:text-base">{el.tech_stack}</p>
+                <p class="text-lg md:text-xl my-2">Technologies used:</p>
+                <p class="text-xs md:text-base">{el.tech_stack}</p>
                 {/* Project URL */}
                 <div class="flex items-center  mt-4">
                   <span class="material-symbols-outlined text-4xl text-[#e6fc5f]">

@@ -7,7 +7,7 @@ const Contact = () => {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: { duration: 0.5, delay: 0.15, ease: "easeInOut" },
+      transition: { duration: 1, delay: 0.15, ease: "easeInOut" },
     },
   };
 
@@ -30,7 +30,7 @@ const Contact = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="w-full lg:w-1/4 mx-auto px-6"
+            className="w-full md:w-3/4 lg:w-1/4 text-sm md:text-lg mx-auto px-6"
           >
             Got a question, proposal or project or want to work together on
             something? Feel free to reach out.
@@ -40,7 +40,7 @@ const Contact = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="text-3xl lg:text-5xl font-extrabold mt-6 mb-6"
+            className="text-2xl md:text-4xl lg:text-5xl font-extrabold mt-6 mb-6"
           >
             eftinur90@gmail.com
           </motion.h6>
@@ -49,7 +49,7 @@ const Contact = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="mb-1"
+            className="text-sm md:text-lg mb-1"
           >
             Get in touch
           </motion.p>
@@ -58,7 +58,7 @@ const Contact = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="flex justify-center gap-2 font-bold"
+            className="flex justify-center gap-4 font-bold"
           >
             <a href="https://github.com/eftinur" target="_blank">
               GitHub

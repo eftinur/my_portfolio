@@ -23,11 +23,11 @@ const About = () => {
 
   const fadeInVariant = {
     initial: {
-      x: -50,
+      // x: -50,
       opacity: 0,
     },
     animate: (i) => ({
-      x: 0,
+      // x: 0,
       opacity: 1,
       transition: {
         duration: 1,
@@ -55,7 +55,7 @@ const About = () => {
       >
         My Story
       </motion.h5>
-      <div className="text-sm lg:text-lg">
+      <div className="text-sm md:text-lg">
         <motion.p
           variants={slideInVariant}
           initial="initial"
@@ -116,7 +116,7 @@ const About = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="text-sm lg:text-base"
+        className="text-sm md:text-base"
       >
         As a React frontend developer I'm comfortable at building dynamic UIs
         and JavaScript (ES6+), coupled with Redux for state management in larger

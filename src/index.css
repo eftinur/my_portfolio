@@ -7,9 +7,10 @@
   src: url(./assets//fonts/Helvetica.ttf);
   font-size: normal;
 }
+
 @font-face {
-  font-family: "Telegraf";
-  src: url(./assets//fonts/PPTelegraf-UltraBold.otf);
+  font-family: "NeueMachina";
+  src: url(./assets//fonts/NeueMachina-Ultrabold.otf);
   font-size: bold;
 }
 
@@ -25,5 +26,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Telegraf";
+  font-family: "NeueMachina";
 }
